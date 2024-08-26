@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "deno run -A index.ts localhost"
+  },
+  "imports": {
+    "@hono/hono": "jsr:@hono/hono@^4.5.8"
+  }
+}

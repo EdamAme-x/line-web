@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "line_logo_128x128_off.png",
+         "32": "line_logo_48x48_off.png",
+         "48": "line_logo_48x48_off.png",
+         "64": "line_logo_128x128_off.png",
+         "96": "line_logo_128x128_off.png"
+      },
+      "default_title": "LINE"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "line_logo_128x128_on.png",
+      "32": "line_logo_48x48_on.png",
+      "48": "line_logo_48x48_on.png",
+      "64": "line_logo_128x128_on.png",
+      "96": "line_logo_128x128_on.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuOql7UFiY9pkxo4aAmuN2HHlZhNT5ws6knRdxYhOACJcm1sBfB7GIIMuBwtpYSb3B3m7jbrKqX2iDdgYLxE9ZmFjYgrD6p4D4H9/4FCz/a7h66vp0onNu2PmbZOEnpZKeCgUGMDDcXk673R8tPfkBbmuzQ0rvpc1Z8hWgHo1jLtnjpkTlH4vzu9FGRQFsCuqUzJPjoPpa2rozvTPpmiO2qfcqH3FJoGJbKwXIPZ74JI8cY//o6xFDVhugveN1VqoGZA8PsVliAa5fgBqDohfiv36xkuD88BqynKNn00hGibuXrj4L6mnR+9I68dhwAiXY01gihtI6KhbekToLfoJmwIDAQAB",
+   "manifest_version": 3,
+   "name": "LINE",
+   "permissions": [ "downloads", "storage", "notifications", "system.display", "cookies" ],
+   "sandbox": {
+      "pages": [ "ltsmSandbox.html", "cropperSandbox.html" ]
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.5.1"
+}

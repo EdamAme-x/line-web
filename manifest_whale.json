@@ -1,0 +1,10 @@
+{
+  "sidebar_action": {
+    "default_title": "LINE",
+    "use_navigation_bar": false,
+    "default_page": "index.html",
+    "default_icon": {
+      "16": "line_logo_32x32_on.png"
+    }
+  }
+}
