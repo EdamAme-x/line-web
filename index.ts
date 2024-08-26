@@ -48,18 +48,9 @@ app.all("/_proxy/CHROME_GW/*", async (c) => {
 })
 
 app.use("*", serveStatic({
-    root: "./",
+    root: "./www",
     onNotFound(path, c) {
       return c.redirect("/?fallbackBy=" + encodeURIComponent(path));
-    },
-    rewriteRequestPath(path) {
-      if (path === "/favicon.ico") {
-        return "/favicon.ico"
-      }else if (path.includes("/secret" || path.includes("/.gitignore") || path.includes("/.github") || path.includes("/index.ts") || path.includes("/deno.json") || path.includes("/README.md") || path.includes("/deno.lock"))) {
-        return "/"
-      }
-
-      return path
     }
 }));
 
